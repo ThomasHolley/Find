@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue,       
       ),
     );
   }
@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
             child: Padding(padding: const EdgeInsets.only(top: 30.0,bottom: 30.0, left: 13.0, right: 23.0),
             child: Column(
               children: <Widget>[
-                _statusText(status[index]["text"]),
+                _statusText(status[index]["text"]),       //Text de la cards = Text de la base
               ],
             ),
           ),

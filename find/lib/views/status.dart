@@ -14,9 +14,9 @@ class Status extends StatefulWidget{
 
 class _StatusState extends State<Status> {
 
-final TextEditingController _textController = TextEditingController();
+final TextEditingController _textController = TextEditingController();    //Creation d'une nouvelle methode TextEdittingController
 
-  List<Map<String, String>> get _status => StatusIneriteWidget.of(context).status;
+  List<Map<String, String>> get _status => StatusIneriteWidget.of(context).status;  //Recupération des données de status
 
 
 
@@ -42,8 +42,8 @@ final TextEditingController _textController = TextEditingController();
             children: <Widget>[
               MaterialButton(
                 onPressed: () {
-                  final text = _textController.text;
-
+                  final text = _textController.text;      //Quand clique sur le bouton le text est implémenté dans la methode 
+                                                                        //et ajouter dans la base
                 StatusProvider.insertStatus({
                   'text' : text
                 });

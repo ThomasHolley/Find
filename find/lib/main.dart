@@ -49,7 +49,9 @@ class _MyHomePageState extends State<MyHomePage>{
               new Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: new TextFormField(
-                  decoration: new InputDecoration(labelText: "Username"),
+                  decoration: new InputDecoration(
+                    labelText: "Username",
+                    ),
                 ),
               ),
               new Padding(
